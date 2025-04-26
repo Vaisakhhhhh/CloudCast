@@ -1,6 +1,7 @@
 import { API_CONFIG } from "./config";
 import { Coordinates, ForecastData, GeocodingResponse, WeatherData } from "./types";
 
+
 class WeatherAPI {
 
     private createUrl(endpoint: string, params: Record<string, string | number>) {

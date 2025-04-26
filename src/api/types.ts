@@ -50,7 +50,7 @@ export interface ForecastData {
     };
   }
 
-  export interface GeocodingResponse {
+  export interface GeocodingLocation {
     name: string;
     local_names?: Record<string, string>;
     lat: number;
@@ -58,3 +58,8 @@ export interface ForecastData {
     country: string;
     state?: string;
   }
+  
+  // Response is an array of locations
+  export type GeocodingResponse = GeocodingLocation[];
+  
+  
