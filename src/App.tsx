@@ -4,7 +4,8 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Layout from "./components/layout";
 import { ThemeProvider } from "./context/theme-provider";
 import WeatherDashboard from "./pages/weather-dashboard";
-import CityPage from "./pages/city-page";
+import { CityPage } from "./pages/city-page";
+import { Toaster } from "sonner";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -28,6 +29,7 @@ function App() {
               <Route path="/city/:cityName" element={<CityPage />} />
             </Routes>
           </Layout>
+          <Toaster richColors />
         </ThemeProvider>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} />
