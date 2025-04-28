@@ -11,7 +11,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur py-2 supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-20">
             <Link to={"/"}>
-               <img src={isDark ? "/logo.png" : "/logo2.png"} alt="Klimate Logo" className="h-14" />
+                {/* <span className={`text-2xl font-bold ${isDark ? "text-white" : "text-black"}`} style={{ fontFamily: "'Roboto', sans-serif" }}>
+                    CLOUD CAST
+                </span> */}
+                <img
+                    src={theme === "dark" ? "/cloudwhite (1).png" : "/cloudBlack.png"}
+                    alt="Klimate logo"
+                    className="h-52"
+                />
             </Link>
 
             <div className="flex gap-4">
