@@ -9,19 +9,16 @@ const Header = () => {
     const isDark = theme === "dark";
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur py-2 supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto flex h-16 items-center justify-between px-20">
+        <div className="container mx-auto flex h-16 items-center md:justify-between space-x-12 md:space-x-0 md:px-20 px-4">
             <Link to={"/"}>
-                {/* <span className={`text-2xl font-bold ${isDark ? "text-white" : "text-black"}`} style={{ fontFamily: "'Roboto', sans-serif" }}>
-                    CLOUD CAST
-                </span> */}
                 <img
-                    src={theme === "dark" ? "/cloudwhite (1).png" : "/cloudBlack.png"}
+                    src={theme === "dark" ? "/cloudwhite.png" : "/cloudBlack.png"}
                     alt="Klimate logo"
-                    className="h-52"
+                    className="h-28 md:h-36"
                 />
             </Link>
 
-            <div className="flex gap-4">
+            <div className="flex gap-2 md:gap-4">
                 <CitySearch/>
 
                 <div onClick={() => setTheme(isDark ? "light" : "dark")} className={`flex items-center cursor-pointer transition-transform duration-500 ${isDark ? "rotate-180" : "rotate-0"}`}>

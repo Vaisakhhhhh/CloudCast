@@ -53,7 +53,7 @@ const WeatherForecast = ({ data }: WeatherForecastProps) => {
       <CardContent>
         <div className="grid gap-4">
             {nextDays.map((day) => {
-                return <div key={day.date} className="grid grid-cols-3 items-center gap-4 rounded-lg border p-4">
+                return <div key={day.date} className="grid md:grid-cols-3 items-center gap-4 rounded-lg border p-4">
                     <div>
                         <p className="font-medium">{format(new Date(day.date * 1000), "EEE, MMM d")}</p>
                         <p className="text-sm text-muted-foreground capitalize">{day.weather.description}</p>
