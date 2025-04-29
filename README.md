@@ -35,5 +35,11 @@
 - Theme managed via a custom context (`useTheme`)
 - Clean, modern UI powered by **ShadCN UI**
 
+---
 
+## 🖼️ UI Preview
+
+![Cloud Cast Screenshot](./preview.png)
+
+---
 
