@@ -39,7 +39,7 @@
 
 ## 🖼️ UI Preview
 
-![Cloud Cast Screenshot](./preview.png)
+![Cloud Cast Screenshot](./public/preview.png)
 
 ---
 
